@@ -25,7 +25,7 @@ function forSubTotalMinusFirstClass(id) {
     document.getElementById(id).innerHTML = newSubtotalMinus;
     const tax = newSubtotalMinus * 0.1;
     document.getElementById("vat").innerHTML = tax;
-    const total = newSubTotal - tax;
+    const total = newSubtotalMinus + tax;
     document.getElementById("total").innerHTML = total;
 }
 function forSubtotalPlusEconomyClass(id) {
@@ -45,7 +45,7 @@ function forSubTotalMinusEconomyClass(id) {
     document.getElementById(id).innerHTML = newSubtotalEconomy;
     const tax = newSubtotalEconomy * 0.1;
     document.getElementById("vat").innerHTML = tax;
-    const total = newSubtotalEconomy - tax;
+    const total = newSubtotalEconomy + tax;
     document.getElementById("total").innerHTML = total;
 
 }
